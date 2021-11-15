@@ -163,6 +163,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Third Party Package Service Providers...
+         */
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+
+        /*
          * Package Service Providers...
          */
 
