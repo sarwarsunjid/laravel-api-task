@@ -1,0 +1,9 @@
+after jwt configuartion 
+
+run this command 
+
+php artisan jwt:secret
+
+this will create jwt secret key on .env file 
+
+JWT_SECRET=M5FCSe6sLugDFMSlLM6wWFAywGj8RZye3e5mY9BweJBffjH2yNeJtcLXybsp9kOJ
