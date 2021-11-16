@@ -15,10 +15,6 @@ use App\Http\Controllers\JWTController;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
 Route::group(['middleware' => 'api'], function($router) {
     Route::post('/register', [JWTController::class, 'register']);
     Route::post('/login', [JWTController::class, 'login']);

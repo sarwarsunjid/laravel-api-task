@@ -12,10 +12,11 @@ use Illuminate\Queue\SerializesModels;
 
 class NewMessage implements ShouldBroadcast
 {
-    private $message;
+    
 
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    public $message;
     /**
      * Create a new event instance.
      *
@@ -33,6 +34,6 @@ class NewMessage implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('test');
+        return new PrivateChannel('home');
     }
 }
